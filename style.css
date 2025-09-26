@@ -1,0 +1,145 @@
+
+
+:root{
+  --texto: #262033;
+  --cabec: #675986;
+  --fundo: #FFF6D9;
+}
+
+* { box-sizing: border-box;
+    font-family: Palatino Linotype;
+     }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto);         
+  text-align: center;             
+}
+
+main, p, h2, h3, form, label {
+  text-align: justify;            
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;              
+  color: var(--texto);
+}
+header {
+  background-color: var(--cabec); 
+  color: var(--fundo);            
+  display: flex;                 
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 30px;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: left;
+}
+nav {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+nav a {
+  color: var(--fundo);            
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover { text-decoration: underline; }
+.search-bar {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.search-bar input {
+  padding: 6px 8px;
+  border: 1px solid var(--texto);
+  border-radius: 5px;
+  background-color: var(--fundo);
+  color: var(--texto);
+  width: 220px;
+}
+.search-bar button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--texto);
+  color: var(--fundo);
+  cursor: pointer;
+}
+main { padding: 20px; }
+.tutorial-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.tutorial-card {
+  background-color: var(--fundo);
+  border: 1px solid var(--texto);
+  border-radius: 8px;
+  padding: 12px;
+  flex: 1 1 260px;
+  max-width: 300px;
+  display: block; 
+}
+.tutorial-card a {
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: bold;
+}
+.tutorial-content {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.tutorial-content img {
+  max-width:100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+.tutorial-content p {
+  text-align: justify;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin-top: 12px;
+}
+form input, form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid var(--texto);
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--cabec);
+  color: var(--fundo);
+  cursor: pointer;
+}
+form button:hover {
+  background-color: var(--texto);
+  color: var(--fundo);
+}
+#search-result {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  text-align: center;
+}

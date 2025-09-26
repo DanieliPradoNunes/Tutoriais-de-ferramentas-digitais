@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="imagens/auto_stories_25dp_675986_FILL0_wght400_GRAD0_opsz24.png">
+</head>
+</head>
+<body>
+    <header>
+        <h1>Solicitação de Novo Tutorial</h1>
+        <nav>
+            <ul>
+                <li><a href="main.html">Início</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Envie sua solicitação</h2>
+            <form action="https://formspree.io/f/mblzlrky" method="POST" target="_blank">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+                <label for="email">Seu E-mail:</label><br>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required><br><br>
+
+                <label for="tutorial">Tutorial desejado:</label><br>
+                <textarea id="tutorial" name="tutorial" rows="4" placeholder="Ex: Como usar planilhas no Excel" required></textarea><br><br>
+
+                <button type="submit">Enviar Solicitação</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
