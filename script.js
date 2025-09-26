@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   const params = new URLSearchParams(window.location.search);
   const qParam = params.get('q');
-  if (qParam && window.location.pathname.includes('main.html')) {
+  if (qParam && window.location.pathname.includes('index.html')) {
     if (input) input.value = qParam;
     filterOnMain(qParam);
   }
@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const query = input.value.trim();
-      if (window.location.pathname.includes('main.html')) {
+      if (window.location.pathname.includes('index.html')) {
         filterOnMain(query);
       } else {
-        window.location.href = `main.html?q=${encodeURIComponent(query)}`;
+        window.location.href = `index.html?q=${encodeURIComponent(query)}`;
       }
     });
     input.addEventListener('keydown', (e) => {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-  if (window.location.pathname.includes('main.html') && !input) {
+  if (window.location.pathname.includes('index.html') && !input) {
     filterOnMain('');
   }
 });
